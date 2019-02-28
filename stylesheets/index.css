@@ -11,7 +11,7 @@ html, body {
 }
 
 .picture-frame {
-    width: 80%;
+    width: 100%;
     padding: 8px;
     background: white;
     border: 2px solid cornflowerblue;
@@ -23,17 +23,23 @@ html, body {
 .picture-frame img {
     width: 100%;
     opacity: 0.9;
+    /* object-fit: cover; */
+    transition: transform 500ms cubic-bezier(1.000, -0.530, 0.405, 1.425);
+
 }
 
 .hamster-playground {
     border: 5px solid gold;
+    width: 100%;
+    position: absolute;
+    top: 50px;
     display: flex;
-    min-height: 300px;
-    flex-direction: column;
+    flex-direction: row;
     /* how to line up on main axis */
-    justify-content: flex-start;
+    justify-content: space-around;
     /* how to line up on cross axis */
     align-items: center;
+    flex-wrap: wrap;
 }
 /* the :hover sudo class*/
 .picture-frame:hover {
@@ -45,8 +51,10 @@ html, body {
     opacity: 1.0;
 }
 
-.picture-frame.big img {
-    transform: scale(2.5)
+.picture-frame img.big {
+    transform: scale(2.5);
+    z-index: 1;
+    opacity: 1.0;
 }
 
 

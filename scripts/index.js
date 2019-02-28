@@ -14,7 +14,7 @@ function respondToClick(event) {
     console.log("Thanks!");
     //add the .big class to intem clicked
     console.log(event.target.parentElement);
-    event.target.parentElement.classList.add('big');
+    event.target.classList.toggle('big');
 }
 
 
@@ -28,4 +28,9 @@ function attachClickHandler(oneElement) {
 targetElements.forEach(attachClickHandler);
 
 
-
+// **** what does this do?
+// targetElements.forEach()
+// ===
+// for (var i = 0; i <= (targetElements.length - 1); i++){
+// 	targetElements[i]
+// }
