@@ -7,11 +7,14 @@ const targetElements = document.querySelectorAll("[data-target]");
 
 
 
-function respondToClick() {
+function respondToClick(event) {
     console.log("hello");
     console.log("How are you?");
     console.log("Im fine.");
     console.log("Thanks!");
+    //add the .big class to intem clicked
+    console.log(event.target.parentElement);
+    event.target.parentElement.classList.add('big');
 }
 
 
@@ -23,4 +26,6 @@ function attachClickHandler(oneElement) {
 
 
 targetElements.forEach(attachClickHandler);
+
+
 

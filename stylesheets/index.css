@@ -43,8 +43,13 @@ html, body {
 .picture-frame:hover img {
     transform: scale(1.10);
     opacity: 1.0;
-
 }
+
+.picture-frame.big img {
+    transform: scale(2.5)
+}
+
+
 @media screen and (min-width: 500px) {
     body {
         background: red;
