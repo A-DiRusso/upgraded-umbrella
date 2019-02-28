@@ -21,6 +21,7 @@ html, body {
 
 .picture-frame img {
     width: 100%;
+    opacity: 0.9;
 }
 
 .hamster-playground {
@@ -50,7 +51,16 @@ html, body {
 
 
 }
+/* the :hover sudo class*/
+.picture-frame:hover {
+    outline: 5px solid red;
+}
 
+.picture-frame:hover img {
+    transform: scale(1.10);
+    opacity: 1.0;
+
+}
 @media screen and (min-width: 500px) {
     body {
         background: red;
