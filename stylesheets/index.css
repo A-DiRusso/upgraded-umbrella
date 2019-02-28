@@ -11,9 +11,10 @@ html, body {
 }
 
 .picture-frame {
-    width: 40%;
+    width: 80%;
+    padding: 8px;
+    background: white;
     border: 2px solid cornflowerblue;
-    /* height:400px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,29 +28,12 @@ html, body {
 .hamster-playground {
     border: 5px solid gold;
     display: flex;
-
-    /* 
-    if you set the height,
-    that's how big the element
-    will be. then the hamsters will
-    overflow.
-     */
-    /* height: 300px; */
     min-height: 300px;
-    
     flex-direction: column;
-
     /* how to line up on main axis */
     justify-content: flex-start;
-
-
-
     /* how to line up on cross axis */
     align-items: center;
-
-    /* flex-wrap: wrap; */
-
-
 }
 /* the :hover sudo class*/
 .picture-frame:hover {
